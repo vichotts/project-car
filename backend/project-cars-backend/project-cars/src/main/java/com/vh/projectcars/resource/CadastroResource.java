@@ -1,28 +1,28 @@
 package com.vh.projectcars.resource;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.vh.projectcars.domain.Cadastro;
+import com.vh.projectcars.services.CadastroService;
 
 @RestController
 @RequestMapping(value="/clientes")
 public class CadastroResource {
 	
-	@RequestMapping(method=RequestMethod.GET)
-	public List<Cadastro> listar() {
-		Cadastro cad1 = new Cadastro("Victor","42425836958", "hot.v@gmail.com","11925252525","victor");
-		Cadastro cad2 = new Cadastro("Amanda","42425852145", "amanda@gmail.com","11925252555","amanda");
+	@Autowired
+	private CadastroService service;
+	/*
+	@RequestMapping(value="/{id}", method=RequestMethod.GET)
+	public ResponseEntity<?> find(@PathVariable Integer id) {
+		
+		Cadastro obj = service.buscar(id);
+		return ResponseEntity.ok().body(obj);
+		}
+	*/
 	
-		List<Cadastro> lista = new ArrayList<>();
-		lista.add(cad1);
-		lista.add(cad2);
-	
-		return lista;
-	
-	}
 }
