@@ -38,31 +38,31 @@ export default props => (
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbar13">
-          <a className="navbar-brand d-none d-md-block" href="home">
+          <a className="navbar-brand d-none d-md-block" href="/home">
             {/* Colocar ícone */}
             <b> Home</b>
           </a>
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <a className="nav-link" href="carros">
+              <a className="nav-link" href="/todo">
                 {/* Colocar ícone */} &nbsp;Carros
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="endereco">
+              <a className="nav-link" href="/endereco">
                 Endereço
               </a>
             </li>
           </ul>
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="login">
+              <a className="nav-link" href="/login">
                 Login
                 <br />
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="cadastro" >
+              <a className="nav-link" href="/cadastro" >
                 Cadastre-se
                 <br />
               </a>

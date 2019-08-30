@@ -1,13 +1,6 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 
-const estilof = {
-    backgroundImage: "linear-gradient(to right, rgb(255, 0, 0), rgba(0, 0, 0, 0.8))",	
-    backgroundPosition: "top left",	
-    backgroundSize: "100%",	
-    backgroundRepeat: 'repeat',	
-    textShadow: '0px 0px 4px black',
-    boxShadow: '0px 0px 4px  black',
-}
 
 export default props => (
     <div className="py-5 footer"  >

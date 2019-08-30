@@ -3,16 +3,18 @@ import foto1 from "../../templates/images/civ.jpg";
 import foto2 from "../../templates/images/hrv.jpg";
 import foto3 from "../../templates/images/jetta.jpg";
 
+
 class Home extends Component {
   render() {
     return (
+      <div>
       <div className="body">
         <div className="text-center" />
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <h1 className="text-warning">
-                {" "}
+              
                 Melhor concessionária de carros da Grande São Paulo ! Venha nos
                 conhecer.
               </h1>
@@ -33,7 +35,7 @@ class Home extends Component {
                 </h1>
                 <ul className="list-unstyled mt-3 mb-4">
                   <li>
-                    <b>Preço sugerido:</b> A partir de R$ 92.300{" "}
+                    <b>Preço sugerido:</b> A partir de R$ 92.300
                     <b>Dimensões:</b> 4.522-4.641 mm C x 1.799 mm L x
                     1.421-1.433 mm A <br />
                     <b>Volume de carga:</b> 334 - 525 l&nbsp;Motor: 1,5 l
@@ -47,10 +49,8 @@ class Home extends Component {
                     <br />
                   </li>
                 </ul>
-                <button
-                  type="button"
-                  className="btn btn-lg btn-block btn-outline-primary active ">
-                  FAÇA SUA PROPOSTA
+                <button type="button" className="btn btn-lg btn-block btn-outline-primary active ">
+                  Entre em contato
                   <br />
                 </button>
               </div>
@@ -64,7 +64,7 @@ class Home extends Component {
                   <i className="fa fa-car" />&nbsp;HRV 19/20
                   <br />
                 </h4>
-              </div>{" "}
+              </div>
               <img className="img-fluid" src={foto2} alt="Card image" />
               <div className="card-body">
                 <h1>
@@ -93,10 +93,8 @@ class Home extends Component {
                     51 l
                   </li>
                 </ul>
-                <button
-                  type="button"
-                  className="btn btn-lg btn-block btn-primary active ">
-                  FAÇA SUA PROPOSTA
+                <button type="button" className="btn btn-lg btn-block btn-outline-primary active ">
+                  Entre em contato
                 </button>
               </div>
             </div>
@@ -123,9 +121,9 @@ class Home extends Component {
                     1,4 l 4 cilindros em linha, 2,0 l 4 cilindros em linha
                     Transmissão: Automático de 6 marchas, Manual de 6 marchas
                   </li>
-                </ul><a class="btn btn-primary" href="carro3" role="button">
-                <button className="bproposta" type="button" class="btn btn-outline-info">
-                  FAÇA SUA PROPOSTA
+                </ul><a className="btn btn-primary" href="carro3" role="button">
+                <button type="button" className="btn btn-lg btn-block btn-outline-primary active ">
+                Entre em contato
                   </button>
                 </a>
               </div>
@@ -133,6 +131,7 @@ class Home extends Component {
           </div>
         </div>
       </div>
+    </div>
     );
   }
 }

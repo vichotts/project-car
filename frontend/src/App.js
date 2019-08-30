@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 
-import Navbar from './component/navbar';
-import Footer from './component/footer';
-import Routes from './routes';
+import Navbar from './component/navbar/index'
+import Footer from './component/footer/index'
+import Routes from './component/route/routes'
 
 import "./templates/css/theme.scss"
 
